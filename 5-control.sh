@@ -1,3 +1,8 @@
+fuser -k 8000/tcp 9000/tcp 8081/tcp 8080/tcp
+echo "Creating LEMP stck in docker for wordpress"
+docker-compose up -d
+echo "Servers created"
+
 # prompting user to open site in browser
 echo "Site is up and healthy. Open $site_name in any browser to view it."
 echo "Or click on the link -> http://localhost:8000"
